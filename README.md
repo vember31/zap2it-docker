@@ -2,6 +2,8 @@
 
 This is a docker image for running [daniel-widrick/zap2it-GuideScraping](https://github.com/daniel-widrick/zap2it-GuideScraping) in an automated way.
 
+##### ** 3/30/2025: Note that the latest 'main' container build includes the fix to point the script at the guide's new home on gracenote.com. There is a PR for the repo above to fix this and I compiled this image against that PR since it hasn't been merged as of me writing this. A big thanks to those who figured out the guide now lives at gracenote.com and that a simple subsitution of zap2it.com > gracenote.com allows this script to keep running like before :) **
+
 ## Features
 * Running of zap2it-GuideScrape.py
 * Docker Compose examples
