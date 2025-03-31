@@ -39,7 +39,7 @@ docker run
   -e OUTPUTFILE=/data/xmlguide.xmltv
   -e HEALTHCHECK_URL=https://hc-ping.com/UUID
   --user 1000:1000
-  ghcr.io/itsamenathan/zap2it:main
+  ghcr.io/vember31/zap2it:main
 ```
 #### docker-compose.yml
 
@@ -47,7 +47,7 @@ docker run
 version: '3'
 services:
   zap2it:
-    image: ghcr.io/itsamenathan/zap2it:main
+    image: ghcr.io/vember31/zap2it:main
     volumes:
       - ./data:/data
     environment:
@@ -70,7 +70,7 @@ docker run
   -e HEALTHCHECK_URL=https://hc-ping.com/UUID
   -e SLEEPTIME=43200
   --user 1000:1000
-  ghcr.io/itsamenathan/zap2it:main
+  ghcr.io/vember31/zap2it:main
 ```
 #### docker-compose.yml
 
@@ -78,7 +78,7 @@ docker run
 version: '3'
 services:
   zap2it:
-    image: ghcr.io/itsamenathan/zap2it:main
+    image: ghcr.io/vember31/zap2it:main
     volumes:
       - ./data:/data
     environment:
@@ -88,8 +88,3 @@ services:
       SLEEPTIME: 43200
     user: "1000:1000"
 ```
-
-### Running with [ofelia](https://github.com/mcuadros/ofelia)
-
-Ofelia can run a docker container on a schedule for you.  
-Check out the [docker-compose.ofelia.yml](docker-compose.ofelia.yml) for reference.
